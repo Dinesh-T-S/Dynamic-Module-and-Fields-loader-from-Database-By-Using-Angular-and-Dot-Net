@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "Dynamic_module_loadded.Controllers.DynamicModuleController",
+    "Method": "CreateModule",
+    "RelativePath": "api/DynamicModule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Dynamic_module_loadded.DTO.DynamicModuleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dynamic_module_loadded.DTO.DynamicModuleDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dynamic_module_loadded.Controllers.DynamicModuleController",
+    "Method": "GetAllModules",
+    "RelativePath": "api/DynamicModule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Dynamic_module_loadded.DTO.DynamicModuleDto, Dynamic module loadded, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dynamic_module_loadded.Controllers.DynamicModuleController",
+    "Method": "GetModulesByName",
+    "RelativePath": "api/DynamicModule/{moduleName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Dynamic_module_loadded.DTO.DynamicModuleDto, Dynamic module loadded, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

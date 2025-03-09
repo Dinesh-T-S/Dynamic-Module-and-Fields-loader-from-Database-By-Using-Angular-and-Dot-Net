@@ -1,0 +1,6 @@
+@Dynamic_module_loadded_HostAddress = http://localhost:5028
+
+GET {{Dynamic_module_loadded_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
